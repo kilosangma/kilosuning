@@ -1,0 +1,123 @@
+@import './base.less';
+#searchResult{
+    height: 100%;
+    .van-nav-bar{
+        font-size: 26px;
+        box-shadow: 0 1px 1px #DCDCDC;
+        color: @mainFontColor;
+        .van-icon-arrow-left,
+        .van-nav-bar__text,
+        .van-nav-bar__right,
+        .van-icon{
+            color: @mainFontColor;
+        }
+        
+        .van-nav-bar__right{
+            font-size: 16px;
+        }
+        .van-nav-bar__title{
+            min-width: 70%;
+            
+        }
+        .van-search{
+            padding: 0;
+            height: 100%;
+        }
+    }
+    .img-box{
+        width: 20px;
+    }
+
+    .select-list{
+        margin-top: 46px;
+        height: 44px;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 44px;
+        text-align: center;
+        box-shadow: 0 1px 1px #e4e4e4;
+        .select-item{
+            width: 25%;
+            font-size: 14px;
+        }
+        .select-item.active{
+            color: @mainColor;
+        }
+    }
+
+    .goods_list{
+        .goods_item{
+            height: 170px;
+            padding: 10px;
+            // background-color: red;
+            box-shadow: 0 1px 1px #e4e4e4;
+            .left-part{
+                height: 100px;
+                width: 100px;
+                margin-right: 10px;
+                // background-color: pink;
+            }
+            .right-part{
+                height: 100%;
+                width: calc(~"100% - 110px");
+                // background-color: blue;
+                position: relative;
+                .title{
+                    height: 35px;
+                    font-size: 13px;
+                    color: @mainFontColor;
+                    margin-bottom: 10px;
+                }
+                .bottom-mes{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    >div{
+                        margin: 5px 0;
+                        color: @grayFontColor;
+                        font-size: 12px;
+                    }
+                    .price{
+                        color: @mainColor;
+                        span{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .empty-box{
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-size: 16px;
+        color: #222;
+        .img-box{
+            width: 100px;
+            display: flex;
+            
+        }
+        .btn-box{
+            display: flex;
+            justify-content: center;
+            .btn-empty{
+
+                padding: 5px 30px;
+                background-color: #ffffff;
+                border: 1px solid #e8e8e8;
+                color: #666;
+                font-size: 14px;
+            }
+        }
+        >div:not(.img-box){
+            width: 100%;
+        }
+        >div{
+            margin-top: 25px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import './base.less';
+#searchPage{
+    .van-nav-bar{
+        font-size: 26px;
+        box-shadow: 0 1px 1px #DCDCDC;
+        color: @mainFontColor;
+        .van-icon-arrow-left,
+        .van-nav-bar__text,
+        .van-nav-bar__right,
+        .van-icon{
+            color: @mainFontColor;
+        }
+        
+        .van-nav-bar__right{
+            font-size: 16px;
+        }
+        .van-nav-bar__title{
+            min-width: 70%;
+            
+        }
+        .van-search{
+            padding: 0;
+            height: 100%;
+        }
+    }
+    .keyword-search{
+        margin-top: 46px;
+        padding: 20px 14px;
+        .keyword-title{
+            height: 24px;
+            font-size: 15px;
+            color: @grayFontColor;
+            line-height: 24px;
+            padding-left: 5px;
+            padding-bottom: 10px;
+        }
+        .hotword-box{
+            display: flex;
+            flex-wrap: wrap;
+            .hotword-item{
+                margin: 0 5px 10px 5px;
+                width: calc(~"33.3% - 10px");
+                height: 30px;
+                color: @grayFontColor;
+                text-align: center;
+                line-height: 30px;
+                background-color: #F2F2F2;
+                
+            }
+            .hotword-item.active{
+                color: @mainColor;
+            }
+        }
+    }
+}

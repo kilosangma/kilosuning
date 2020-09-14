@@ -1,0 +1,71 @@
+@import './base.less';
+.mark {
+    transition: all 1s;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    .nav-more-list {
+      width: calc(~"100% - 40px");
+      position: absolute;
+      left: 0;
+      // top: 50px;
+    //   height: 200px;
+      background-color: #fff;
+      margin: 10px;
+      border-radius: 10px;
+  
+      padding: 0 10px;
+      .nav-title {
+        height: 50px;
+        line-height: 50px;
+        font-size: 15px;
+        color: #222;
+      }
+      .btn-list{
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          .btn-item{
+              width: 76.25px;
+              height: 76.25px;
+              border-radius: 10px;
+              background-color: #f7f7f7;
+              margin-bottom: 10px;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              .img-box{
+                  width: 30px;
+              }
+              .words{
+                  color: #222;
+                  font-size: 14px;
+                  width: 100%;
+                  text-align: center;
+              }
+          }
+          .btn-item:not(:nth-child(4n)){
+              margin-right: 10px;
+          }
+      }
+    }
+  }
+  .display {
+    display: block;
+  }
+  // 此处设置过渡属性
+  .fade-enter-active,
+  .fade-leave-active {
+      transition: opacity .5s;
+  }
+
+  //  此处为刚开始或者结束(反过来 其实是他们都是一个圆点)
+  .fade-enter,
+  .fade-leave-to{
+      opacity: 0;
+  }

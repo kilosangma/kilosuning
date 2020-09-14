@@ -1,0 +1,45 @@
+@import './base.less';
+#SettingTop{
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #f2f2f2;
+    >div{
+        float: left;
+    }
+    .left,.right{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    >div.left{
+        position: relative;
+        clear: both;
+    }
+    >div.left::after{
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-left: 1px solid #353d44;
+        border-bottom: 1px solid #353d44;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        // calc(~"50% - 7.5px");
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    >div.right{
+        margin-left: auto;
+        .img-box{
+            padding: 12.25px;
+        }
+    }
+    .title{
+        width: calc(~"100% - 100px");
+        line-height: 50px;
+        text-align: center;
+        font-size: 15px;
+        color: #333;
+    }
+}

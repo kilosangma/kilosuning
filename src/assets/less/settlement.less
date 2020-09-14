@@ -1,0 +1,235 @@
+@import './base.less';
+#settlement{
+    min-height: 100%;
+    padding-bottom: 10px;
+    background-color: #f2f2f2;
+    .addressSelector{
+        // height: 100px;
+        display: flex;
+        align-items: center;
+        .left-part{
+            margin-right: 10px;
+            height: 30px;
+            width: 30px;
+            background-color: #f85900;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            color: #fff;
+        }
+        .right-part{
+            font-size: 24px;
+            color: #c4c4c4;
+        }
+        .center-part{
+            flex: 1;
+            height: 100%;
+            .addressBox-item{
+                height: 33.3%;
+                line-height: 20px;
+                font-size: 12px;
+                color: #222;
+            }
+            .top{
+                display: flex;
+                .isDefault{
+                    height: 16px;
+                    padding: 0 5px;
+                    background-color: #f85900;
+                    color: #fff;
+                    line-height: 16px;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                }
+                .cities{
+                    flex: 1;
+                }
+            }
+            .middle{
+                font-size: 16px;
+                font-weight: 700;
+            }
+            .bottom{
+                span{
+                    margin-right: 5px;
+                }
+            }
+        }
+        .empty-address{
+            color: #222;
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }   
+    .order{ 
+        .order-item{
+            // width: calc(~"100% - 10px");
+            // padding: 15px 5px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            .item-content{
+                // width: calc(~"100% - 20px");
+                height: 100%;
+                // margin-left: 20px;
+                // background-color: pink;
+                .img-box{
+                    width: 98px;
+                    height: 98px;
+                    border: 1px solid @lineColor;
+                    margin: 0 10px 0 0;
+                }
+                .right-part{
+                    position: relative;
+                    width: calc(~"100% - 120px");
+                    height: 100%;
+                    // background-color: pink;
+                    font-size: 14px;
+                    color: black;
+                    .title,.specification{
+                        // height: 20px;
+                        line-height: 20px;
+                        height: 40px;
+                        font-weight: bold;
+                    }
+                    .specification{
+                        .spc-item{
+                            margin-right: 5px;
+                        }
+                    }
+                    .price{
+                        font-size: 12px;
+                        color: @sonColor;
+                        margin-left: auto;
+                        .price-box{
+                            color: @mainColor;
+                            span{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .stepper{
+                        width: 100%;
+                        height: 32px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        line-height: 32px;
+                        .del-box{
+                            height: 32px;
+                            width: 32px;
+                            text-align: center;
+                            line-height: 32px;
+                            font-size: 26px;
+                            color: #a4a4a4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .submit-bar{
+        height: 40px;
+        width: calc(~"100% - 20px");
+        padding: 5px 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        box-shadow: 1px 0 4px 1px rgba(150, 146, 146, 0.3);
+        background-color: #fff;
+        .price{
+            margin-left: auto;
+            margin-right: 10px;
+            font-size: 14px;
+            color: #222;
+            .number{
+                color: #ff8d00;
+                font-weight: 700;
+            }
+        }
+        .submit-btn{
+            height: calc(~"100% - 10px");
+            padding: 5px 20px;
+            background-color: #ff8d00;
+            font-size: 15px;
+            color: #fff;
+            line-height: 30px;
+            border-radius: 10px;
+        }
+    }
+    .addressList{
+        .title{
+            height: 48px;
+            line-height: 48px;
+            padding: 0 15px;
+            font-size: 16px;
+            color: #d1d1d1;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            .fa-times{
+                margin-left: auto;
+            }
+        }
+        .content{
+            // margin-top: 48px;
+            padding: 10px 15px 0 15px;
+            height: calc(~"100% - 68px");
+            overflow-y: auto;
+        .item{
+            padding: 13px 7px;
+            // margin-bottom: 10px;
+            &:not(:last-child){
+                border-bottom: 1px solid  #d1d1d1;
+            }
+            .item__name{
+                margin-bottom: 7px;
+            }
+            .tag{
+                background-color:  #ffcc00;
+                color: #fff;
+                border-radius: 12px;
+                display: block;
+                float: right;
+                width: 60px;
+                height: 20px;
+                text-align: center;
+                line-height: 20px;
+            }
+            .item__address{
+                color: #222;
+                font-size: 14px;
+            }
+        }
+        }
+        .addMoreAddress{
+            width: 100px;
+            margin: 50px auto;
+            height: 50px;
+            .van-button{
+                margin: 0 auto;
+                border-color: #222;
+                background-color:  #222;
+                color: #fff;
+            }
+        }
+    }
+    .content-box-settlement{
+        margin: 10px 10px 0px;
+        padding: 10px;
+        width: calc(~"100% - 40px");
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    .van-nav-bar{
+        background: linear-gradient(to right,#ff8d00,#ffcc00);
+    }
+    .van-nav-bar .van-icon-arrow-left, .van-nav-bar .van-nav-bar__text, .van-nav-bar .van-nav-bar__right, .van-nav-bar .van-icon,
+    .van-nav-bar__title{
+        color: #fff !important;
+    }
+}

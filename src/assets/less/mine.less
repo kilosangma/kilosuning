@@ -1,0 +1,178 @@
+@import '../less/base.less';
+#mine{
+    height: 100%;
+    .top-box{
+        height: 206px;
+        background-color: #ffdb47;
+        position: relative;
+        .title{
+            height: 23px;
+            padding-top: 9px;
+            text-align: center;
+            line-height: 23px;
+            position: relative;
+            .title-name{
+                font-size: 18px;
+                color: #000;
+                font-weight: 700;
+            }
+            .setting{
+                width: 23px;
+                height: 23px;
+                position: absolute;
+                right: 9px;
+                top: 9px;
+            }
+        }
+        .user-box{
+            height: 60px;
+            padding: 26px 21px 0;
+            .user-icon{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                overflow: hidden;
+                
+            }
+            .user-name{
+                height: 100%;
+                margin-left: 21px;
+                width: 100px;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                >div{
+                    width: 100%;
+                    // align-self: center;
+                    line-height: 30px;
+                    
+                }
+            }
+        }
+        .more-mes-box{
+            position: absolute;
+            height: 60px;
+            width: 100%;
+            bottom: 15px;
+            left: 0;
+            // background-color: pink;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .mes-item{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                >div{
+                    width: 100%;
+                    color: #222;
+                    margin-bottom: 5px;
+                }
+                .number{
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+                .mes-title{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .content-box-mine{
+        width: calc(~"100% - 40px");
+        margin: 10px 10px 0;
+        padding: 10px;
+        
+        // height: 100px;
+        background-color: #fff;
+        .list-top{
+            // height: 40px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            .title{
+                font-size: 15px;
+                font-weight: bold;
+                color: #222;
+            }
+            .toAll{
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                font-size: 12px;
+                font-weight: normal;
+                color: @grayFontColor;
+                .img-box{
+                    width: 12px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .vip-card{
+        position: relative;
+        top: -15px;
+        height: 30px;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        .img-box{
+            height: 100%;
+        }
+        .right-part{
+            margin-left: auto;
+            line-height: 30px;
+            color: #222;
+            span{
+                margin-right: 5px;
+            }
+        }
+    }
+    .my-order{
+        margin-top: -5px;
+        .btn-box{
+            display: flex;
+            justify-content: space-around;
+            .btn-item{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+               .icon{
+                   height: 30px;
+                   
+               } 
+               .desc{
+                   text-align: center;
+                   width: 100%;
+                   margin: 10px 0;
+               }
+            }
+        }
+    }
+    .my-tools{
+        // margin-top: -5px;
+        .btn-list{
+            display: flex;
+            flex-wrap: wrap;
+            .btn-item{
+                width: 25%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .icon{
+                    height: 25px;
+                }
+                .desc{
+                    height: 40px;
+                    width: 100%;
+                    text-align: center;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    
+}

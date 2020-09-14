@@ -1,0 +1,55 @@
+@import './base.less';
+#editAddress{
+    height: 100%;
+    background-color: @lineColor;
+    .content-box{
+        background-color: #fff;
+        .eidt-item{
+            height: 50px;
+            margin: 0 10px;
+            border-bottom: 1px solid #dcdcdc;
+            background-color: #fff;
+            color: #333;
+            font-size: 15px;
+
+            display: flex;
+            align-items: center;
+            .title{
+                margin-right: 20px;
+            }
+            .content{
+                flex: 1;
+                height: 100%;
+                >input,div{
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                }
+                >div{
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+    .address-btn{
+        width: calc(~"100% - 20px");
+        height: 50px;
+        border-radius: 10px;
+        margin: 30px 10px 0;
+        line-height: 50px;
+        text-align: center;
+        font-size: 15px;
+        color: #fff;
+    }
+    .save{
+        background: linear-gradient(to right,#ff8d00,#ffcc00);
+    }
+    .del{
+        background: linear-gradient(to right,#ccc,#eee);
+        // background-color: #222;
+        color: #222;
+        border: 1px solid #bbb;
+    }
+}
